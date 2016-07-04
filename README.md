@@ -34,10 +34,15 @@ It will use the following packages to edit the RunTime, the WorkSpace and the Wo
 •org.eclipse.core.resources --> Provides basic support for managing a workspace and its resources.
 #Workbench Packages
 •org.eclipse.jface.action --> Provides support for shared UI resources such as menus, tool bars, and status lines.
+
 •org.eclipse.jface.dialogs -->Provides support for dialogs.
+
 •org.eclipse.jface.operation --> Provides JFace support for long-running operations.
+
 •org.eclipse.jface.preference --> Provides a framework for preferences.
+
 •org.eclipse.swt --> SWT constants and error handling support.
+
 •org.eclipse.ui --> Application programming interfaces for interaction with and extension of the Eclipse Platform User Interface.
  
 #8.2. Debugger
