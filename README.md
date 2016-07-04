@@ -24,29 +24,21 @@ Over the years, many software engineering activities have relied on the automate
 The City.Risks  SDK will be created on the Eclipse IDE. Eclipse provides IDEs and platforms nearly every language and architecture. It is well established for its Java IDE, C/C++, JavaScript and PHP IDEs built on extensible platforms for creating desktop, Web and cloud IDEs. These platforms deliver the most extensive collection of add-on tools avaialable for software developers . 
 The SDK will take the IDE’s capabilities and the .jar files developed by the consortium to create a Java application. This application will act as an interface between the core platform and third party developers.
 The City.Risks SDK will include a central Programming Interface, a Debugger, and a Visual Editor
-8.1. Central Programming Interface
+#8.1. Central Programming Interface
 The Central Programming Interface will be an essential part of the SDK, as it will help third party developers to write applications that request services or resources from the core platform.
 It will use the following packages to edit the RunTime, the WorkSpace and the WorkBench:
 
 #Platform Runtime Packages
-org.eclipse.core.runtime
-Provides core support for plug-ins and the plug-in registry.
+•org.eclipse.core.runtime --> Provides core support for plug-ins and the plug-in registry.
 #Workspace Packages
-org.eclipse.core.resources
-Provides basic support for managing a workspace and its resources.
+•org.eclipse.core.resources --> Provides basic support for managing a workspace and its resources.
 #Workbench Packages
-org.eclipse.jface.action
-Provides support for shared UI resources such as menus, tool bars, and status lines.
-org.eclipse.jface.dialogs
-Provides support for dialogs.
-org.eclipse.jface.operation
-Provides JFace support for long-running operations.
-org.eclipse.jface.preference
-Provides a framework for preferences.
-org.eclipse.swt
-SWT constants and error handling support.
-org.eclipse.ui
-Application programming interfaces for interaction with and extension of the Eclipse Platform User Interface.
+•org.eclipse.jface.action --> Provides support for shared UI resources such as menus, tool bars, and status lines.
+•org.eclipse.jface.dialogs -->Provides support for dialogs.
+•org.eclipse.jface.operation --> Provides JFace support for long-running operations.
+•org.eclipse.jface.preference --> Provides a framework for preferences.
+•org.eclipse.swt --> SWT constants and error handling support.
+•org.eclipse.ui --> Application programming interfaces for interaction with and extension of the Eclipse Platform User Interface.
  
 #8.2. Debugger
 The  debugger will be used for fixing program errors. We will use the JDT debugger, with which we can execute Java programs line by line and examine the value of variables at different points in the program 
