@@ -1,13 +1,10 @@
+//package (default)
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.Charset;
- 
-/**
- * @author Crunchify.com
- * 
- */
  
 public class Users {
  
