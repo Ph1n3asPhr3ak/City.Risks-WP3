@@ -4,7 +4,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.io.Reader;
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
@@ -38,7 +40,10 @@ public class Users {
   }
 
   public static void main(String[] args) throws IOException, JSONException {
-    JSONObject json = readJsonFromUrl("http://core.cityrisks.eu/cityrisks/api/crUsers/");
+    
+	  System.out.println("\nTesting 2 - Send Http POST request");
+	  
+	  JSONObject json = readJsonFromUrl("http://core.cityrisks.eu/cityrisks/api/crUsers/");
     JSONArray arr = json.getJSONObject("_embedded").getJSONArray("crUsers");
     List<String> list = new ArrayList<String>();
     System.out.println(arr+"\n");
@@ -56,5 +61,31 @@ public class Users {
     	System.out.println(lastname +" "+ firstname +" ("+ email +") \n"+ json2+"\n\n");
     } 
     System.out.println("Done");
+    //String url="http://core.cityrisks.eu/cityrisks/api/crUsers/";
+	//URL object=new URL(url);
+
+	//HttpURLConnection con = (HttpURLConnection) object.openConnection();
+	//con.setDoOutput(true);
+	//con.setDoInput(true);
+	//con.setRequestProperty("Content-Type", "application/json");
+	//con.setRequestProperty("Accept", "application/json");
+	//con.setRequestMethod("POST");
+
+	//JSONObject cred   = new JSONObject();
+	//JSONObject auth   = new JSONObject();
+	//JSONObject parent = new JSONObject();
+
+	//cred.put("username","zografod");
+	//cred.put("password", "pwd");
+
+	//auth.put("name", "dim");
+	//auth.put("passwordCredentials", cred.toString());
+
+	//parent.put("auth", auth.toString());
+
+	//OutputStreamWriter wr = new OutputStreamWriter(con.getOutputStream());
+	//wr.write(parent.toString());
+	//wr.flush();
   }
+  
 }
